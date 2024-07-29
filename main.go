@@ -11,6 +11,8 @@ type goprt struct {
 	order int
 }
 
+// TODO - Make Worker pool of goRoutines
+
 func main() {
 	taskList := make([]goprt, 0)
 	taskList = append(taskList, goprt{fun: func() { fmt.Println("order is 1") }, order: 1})
